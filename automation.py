@@ -14,11 +14,11 @@ from playwright.sync_api import sync_playwright
 import csv
 import sys
 
-##################################################################
-# This program loads in prompts from CSV file and implements them in Midjourney. 
+################################################################################################
+# This program loads in prompts from CSV file and implements them in commercial diffusion model. 
 # Once the images are created this program also upscales them and then downloads them
 # to the Generated Images folder 
-##################################################################
+################################################################################################
 
 
 # Get logger for this file
@@ -29,7 +29,7 @@ logger.setLevel(logging.INFO)
 # Define a custom log format without %(asctime)s
 log_format = logging.Formatter('[%(levelname)s] [%(pathname)s:%(lineno)d] - %(message)s - [%(process)d:%(thread)d]')
 
-file_handler = logging.FileHandler('midjourney_automation.log', mode='a')  # Create file handler
+file_handler = logging.FileHandler('automation.log', mode='a')  # Create file handler
 file_handler.setFormatter(log_format)  # Set log format for file handler
 logger.addHandler(file_handler)  # Add file handler to logger
 
